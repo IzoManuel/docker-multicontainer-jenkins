@@ -7,6 +7,14 @@ pipeline {
     }
 
     stages {
+        stage('Verify Credentials') {
+            steps {
+                script {
+                    echo "Docker Hub Username: ${DOCKERHUB_USERNAME}"
+                    echo "Docker Hub Access Token: ${DOCKERHUB_ACCESS_TOKEN}" // Uncomment with caution
+                }
+            }
+        }
         stage('Install Dependencies') {
             steps {
                 script {

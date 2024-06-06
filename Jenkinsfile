@@ -11,8 +11,8 @@ pipeline {
             steps {
                 script {
                     echo "Installing docker-compose"
-                    sh 'apt-get update'
-                    sh 'apt-get install -y docker-compose jq'
+                    sh 'sudo apt-get update'
+                    sh 'sudo apt-get install -y docker-compose jq'
                     sh 'docker-compose --version'
                 }
             }

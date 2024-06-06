@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_USERNAME = credentials('DOCKERHUB_USERNAME')
-        DOCKERHUB_ACCESS_TOKEN = credentials('DOCKERHUB_ACCESS_TOKEN')
+        DOCKERHUB_USERNAME = "israelmanuel"
+        DOCKERHUB_ACCESS_TOKEN = "dckr_pat_g7-_2Zhr8dieWNIewvL1LTP-wOY"
     }
 
     stages {

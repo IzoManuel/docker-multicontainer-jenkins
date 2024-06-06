@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  cb-service-01:
+    build:
+      context: ./jk-service-01
+      dockerfile: Dockerfile
+    image: jk-service-01:latest
+    ports:
+      - "5000:5000"
+    
+  cb-service-02:
+    build:
+      context: ./jk-service-02
+      dockerfile: Dockerfile
+    image: jk-service-02:latest
+    ports:
+      - "5001:5000"

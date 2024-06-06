@@ -10,7 +10,7 @@ pipeline {
         stage('Debug Credentials') {
             steps {
                 script {
-                    sh 'echo "Docker Hub Username: $DOCKERHUB_USERNAME"'
+                    sh 'echo "Docker Hub Username length: ${#DOCKERHUB_USERNAME}"'
                     sh 'echo "Docker Hub Access Token Length: ${#DOCKERHUB_ACCESS_TOKEN}"'
                 }
             }
